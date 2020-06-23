@@ -1,0 +1,56 @@
+.body-content {
+    .flex-col();
+
+    section {
+        padding: 100px 0;
+        .flex-row();
+        align-items: center;
+        justify-content: center;
+        color: @white;
+
+        .card {
+            
+            width: 500px;
+            height: 350px;
+            background-color: @card-bg;
+            border-radius: 8px;
+            padding: 10px;
+            padding-top: 50px;
+            padding-right: 50px; 
+
+            h2 {
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+        }
+        
+        img {
+            width: inherit;
+
+        }
+
+        .item {
+            width: 250px;
+            margin-left: -50px;
+        }
+
+    }
+
+    .green-body {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: @light-teal;
+
+        .item {
+            margin-right: -50px;
+
+        }
+        
+        div {
+            padding-right: 10px;
+            padding-left: 50px;
+        }
+        
+    }
+}
+
