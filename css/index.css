@@ -127,46 +127,60 @@ table {
   border-spacing: 0;
 }
 body {
-  background-color: #babdc4;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff4dc;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 header {
-  width: 100%;
-  background-color: #2193B0;
-  align-items: center;
+  width: 80%;
+  padding: 0 10%;
+  padding-top: 50px;
+  margin: 0 auto;
+  background-color: #93d9e9;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
-header h1 {
-  font-size: 1.8rem;
+header .header-text {
+  display: flex;
+  flex-direction: column;
+  background-color: #93d9e9;
+}
+header .header-text h1 {
+  font-size: 2.8rem;
   font-weight: bold;
-  padding: 5px 10px;
-  margin: 10px;
-  margin-left: 20px;
-  background-color: #FFF;
-  border-radius: 20px;
+  color: #FFF;
+}
+header .header-text h2 {
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 header nav {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 header nav a {
+  margin-left: 10px;
   text-decoration: none;
   color: #FFF;
-  margin: 0 10px;
 }
 header nav .nav-links {
+  margin-bottom: -24px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 header nav .log-in {
+  margin-bottom: -24px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -174,16 +188,19 @@ header nav .log-in {
 }
 header nav .log-in a:nth-child(2) {
   font-weight: bold;
-  padding: 10px 20px;
-  background-color: #ad2020;
+  padding: 8px 16px;
+  background-color: #ec5d0b;
   border-radius: 20px;
+}
+img {
+  max-width: 100%;
 }
 .body-content {
   display: flex;
   flex-direction: column;
 }
 .body-content section {
-  padding: 100px 0;
+  padding: 64px 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -191,34 +208,98 @@ header nav .log-in a:nth-child(2) {
   color: #FFF;
 }
 .body-content section .card {
-  width: 500px;
-  height: 350px;
-  background-color: #ffe0a6;
-  border-radius: 8px;
-  padding: 10px;
+  width: 450px;
+  height: 250px;
+  background-color: #02607c;
+  border-radius: 4px;
+  padding: 20px;
   padding-top: 50px;
-  padding-right: 50px;
+  padding-right: 60px;
+}
+.body-content section .card h1 {
+  font-size: 1.8rem;
 }
 .body-content section .card h2 {
   font-size: 1.5rem;
   font-weight: 500;
 }
+.body-content section .card p {
+  margin: 20px 0;
+}
 .body-content section img {
   width: inherit;
+  border-radius: 4px;
 }
 .body-content section .item {
   width: 250px;
   margin-left: -50px;
+  border-radius: 4px;
+}
+.body-content section button {
+  margin-top: 50px;
+  background-color: #ca6623;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+.body-content section .signinbtn {
+  margin-right: 24px;
 }
 .body-content .green-body {
   display: flex;
   flex-direction: row-reverse;
-  background-color: #6dd5ed;
+  background-color: #93d9e9;
 }
 .body-content .green-body .item {
   margin-right: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .body-content .green-body div {
-  padding-right: 10px;
-  padding-left: 50px;
+  padding-right: 20px;
+  padding-left: 60px;
+}
+.body-content .green-body .right-btn {
+  margin-left: 280px;
+}
+.body-content .hero {
+  width: 100%;
+  height: 75%;
+  background-color: #93d9e9;
+  margin-top: 0;
+  padding-top: 0;
+}
+.body-content .hero img {
+  border-radius: 0;
+  width: 80%;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  background-color: #93d9e9;
+  color: #FFF;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+footer a {
+  text-decoration: none;
+  color: #FFF;
+  margin-left: 20px;
+}
+footer h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+footer h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
