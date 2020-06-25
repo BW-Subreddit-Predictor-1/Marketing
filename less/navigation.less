@@ -8,6 +8,10 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    @media @mobile {
+        .flex-col();
+    }
+
     .header-text {
         .flex-col();
         background-color: @light-teal;
@@ -33,6 +37,10 @@ header {
         justify-content: space-between;
         align-items: center;
 
+        @media @mobile {
+            width: 100%;
+        }
+
         a {
             margin-left: 10px;
             .no-decor();
@@ -44,6 +52,11 @@ header {
         margin-bottom: -24px;
         .flex-row();
         justify-content: space-evenly;
+
+        @media @mobile {
+            margin-bottom: 0;
+            font-size: 0.8rem;
+        }
     }
 
     .log-in {
@@ -51,6 +64,10 @@ header {
         .flex-row();
         justify-content: space-evenly;
         align-items: center;
+
+        @media @mobile {
+            margin-bottom: 0;
+        }
 
         a:nth-child(2) {
             font-weight: bold;

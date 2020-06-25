@@ -145,6 +145,12 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+}
 header .header-text {
   display: flex;
   flex-direction: column;
@@ -168,6 +174,11 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+  }
+}
 header nav a {
   margin-left: 10px;
   text-decoration: none;
@@ -179,12 +190,23 @@ header nav .nav-links {
   flex-direction: row;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  header nav .nav-links {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+  }
+}
 header nav .log-in {
   margin-bottom: -24px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width: 500px) {
+  header nav .log-in {
+    margin-bottom: 0;
+  }
 }
 header nav .log-in a:nth-child(2) {
   font-weight: bold;
