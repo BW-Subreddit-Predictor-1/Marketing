@@ -1,0 +1,84 @@
+header {
+    width: 80%;
+    padding: 0 10%;
+    padding-top: 50px;
+    .centerit();
+    background-color: @light-teal;
+    .flex-row();
+    justify-content: space-between;
+    align-items: center;
+
+    @media @mobile {
+        .flex-col();
+    }
+
+    .header-text {
+        .flex-col();
+        background-color: @light-teal;
+
+        h1{
+            font-size: 2.8rem;
+            font-weight: bold;
+            color: @white;
+        }
+
+        h2 {
+            color: @white;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+
+        }
+    }
+
+    nav {
+        width: 60%;
+        .flex-row();
+        justify-content: space-between;
+        align-items: center;
+
+        @media @mobile {
+            width: 100%;
+        }
+
+        a {
+            margin-left: 10px;
+            .no-decor();
+            color: @white;
+            
+        }
+       
+    .nav-links {
+        margin-bottom: -24px;
+        .flex-row();
+        justify-content: space-evenly;
+
+        @media @mobile {
+            margin-bottom: 0;
+            font-size: 0.8rem;
+        }
+    }
+
+    .log-in {
+        margin-bottom: -24px;
+        .flex-row();
+        justify-content: space-evenly;
+        align-items: center;
+
+        @media @mobile {
+            margin-bottom: 0;
+        }
+
+        a:nth-child(2) {
+            font-weight: bold;
+            padding: 8px 16px;
+            background-color: @signup-button;
+            border-radius: 20px;
+        }
+    }
+    }
+}
+
+img {
+    max-width: 100%;
+}
