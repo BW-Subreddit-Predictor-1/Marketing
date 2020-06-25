@@ -6,12 +6,22 @@ footer{
     color: @white;
     padding-top: 50px;
     padding-bottom: 25px;
+
+    @media @mobile {
+        .flex-col();
+        align-items: center;
+    }
     
 
     a {
         text-decoration: none;
         color: @white;
         margin-left: 20px;
+
+        @media @mobile {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
         
     }
 
@@ -25,6 +35,13 @@ footer{
         
         font-size: 1.5rem;
         font-weight: 500;
+        
+        @media @mobile {
+
+            margin-bottom: 16px;
+            
+        }
+    
     }
 
 }

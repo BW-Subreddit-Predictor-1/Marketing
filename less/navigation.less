@@ -9,6 +9,9 @@ header {
     align-items: center;
 
     @media @mobile {
+        width: 100%;
+        padding: 0;
+        padding-top: 24px;
         .flex-col();
     }
 
@@ -16,9 +19,6 @@ header {
         .flex-col();
         background-color: @light-teal;
 
-        @media @mobile {
-            margin-bottom: 24px;
-        }
 
         h1{
             font-size: 2.8rem;
@@ -47,6 +47,7 @@ header {
             width: 100%;
             margin-bottom: 16px;
             .flex-col();
+            flex-direction: column-reverse;
         }
 
         a {
@@ -74,8 +75,8 @@ header {
         align-items: center;
 
         @media @mobile {
-            margin-top: 8px;
-            margin-bottom: 0;
+            margin-bottom: 24px;
+            font-weight: bold;
         }
 
         a:nth-child(2) {
@@ -88,6 +89,4 @@ header {
     }
 }
 
-img {
-    max-width: 100%;
-}
+

@@ -147,6 +147,9 @@ header {
 }
 @media (max-width: 500px) {
   header {
+    width: 100%;
+    padding: 0;
+    padding-top: 24px;
     display: flex;
     flex-direction: column;
   }
@@ -155,11 +158,6 @@ header .header-text {
   display: flex;
   flex-direction: column;
   background-color: #93d9e9;
-}
-@media (max-width: 500px) {
-  header .header-text {
-    margin-bottom: 24px;
-  }
 }
 header .header-text h1 {
   font-size: 2.8rem;
@@ -187,6 +185,7 @@ header nav {
     margin-bottom: 16px;
     display: flex;
     flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 header nav a {
@@ -215,8 +214,8 @@ header nav .log-in {
 }
 @media (max-width: 500px) {
   header nav .log-in {
-    margin-top: 8px;
-    margin-bottom: 0;
+    margin-bottom: 24px;
+    font-weight: bold;
   }
 }
 header nav .log-in a:nth-child(2) {
@@ -224,9 +223,6 @@ header nav .log-in a:nth-child(2) {
   padding: 8px 16px;
   background-color: #ec5d0b;
   border-radius: 20px;
-}
-img {
-  max-width: 100%;
 }
 .body-content {
   display: flex;
@@ -240,6 +236,13 @@ img {
   justify-content: center;
   color: #FFF;
 }
+@media (max-width: 500px) {
+  .body-content section {
+    max-width: 100% display: flex; flex-direction: column;;
+    justify-content: center;
+    padding: 0;
+  }
+}
 .body-content section .card {
   width: 450px;
   height: 250px;
@@ -249,24 +252,75 @@ img {
   padding-top: 50px;
   padding-right: 60px;
 }
+@media (max-width: 500px) {
+  .body-content section .card {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 50px;
+    border-radius: 0;
+  }
+}
 .body-content section .card h1 {
   font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .body-content section .card h1 {
+    text-align: center;
+  }
 }
 .body-content section .card h2 {
   font-size: 1.5rem;
   font-weight: 500;
 }
+@media (max-width: 500px) {
+  .body-content section .card h2 {
+    text-align: center;
+  }
+}
 .body-content section .card p {
   margin: 20px 0;
+}
+@media (max-width: 500px) {
+  .body-content section .card p {
+    line-height: 1.2rem;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .body-content section .card p {
+    text-align: center;
+  }
 }
 .body-content section img {
   width: inherit;
   border-radius: 4px;
 }
+@media (max-width: 500px) {
+  .body-content section img {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .body-content section .item {
   width: 250px;
   margin-left: -50px;
   border-radius: 4px;
+}
+@media (max-width: 500px) {
+  .body-content section .item {
+    margin: 0;
+    width: 80%;
+    margin-top: -48px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .body-content section .buttinstyling {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .body-content section button {
   margin-top: 50px;
@@ -281,13 +335,42 @@ img {
   font-size: 16px;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .body-content section button {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 16px;
+  }
+}
 .body-content section .signinbtn {
   margin-right: 24px;
+}
+@media (max-width: 500px) {
+  .body-content section .signinbtn {
+    margin: 0;
+  }
 }
 .body-content .green-body {
   display: flex;
   flex-direction: row-reverse;
   background-color: #93d9e9;
+}
+@media (max-width: 500px) {
+  .body-content .green-body {
+    flex-direction: column;
+  }
+}
+.body-content .green-body .card {
+  padding-left: 60px;
+  padding-right: 20px;
+}
+@media (max-width: 500px) {
+  .body-content .green-body .card {
+    max-width: 100%;
+    padding-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .body-content .green-body .item {
   margin-right: -50px;
@@ -295,12 +378,19 @@ img {
   flex-direction: column;
   justify-content: flex-end;
 }
-.body-content .green-body div {
-  padding-right: 20px;
-  padding-left: 60px;
+@media (max-width: 500px) {
+  .body-content .green-body .item {
+    margin-right: 0px;
+    justify-content: center;
+  }
 }
 .body-content .green-body .right-btn {
   margin-left: 280px;
+}
+@media (max-width: 500px) {
+  .body-content .green-body .right-btn {
+    margin: 0 auto;
+  }
 }
 .body-content .hero {
   width: 100%;
@@ -313,6 +403,11 @@ img {
   border-radius: 0;
   width: 80%;
 }
+@media (max-width: 500px) {
+  .body-content .hero img {
+    width: 100%;
+  }
+}
 footer {
   display: flex;
   flex-direction: row;
@@ -323,10 +418,23 @@ footer {
   padding-top: 50px;
   padding-bottom: 25px;
 }
+@media (max-width: 500px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 footer a {
   text-decoration: none;
   color: #FFF;
   margin-left: 20px;
+}
+@media (max-width: 500px) {
+  footer a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 footer h1 {
   font-size: 2.8rem;
@@ -335,4 +443,9 @@ footer h1 {
 footer h2 {
   font-size: 1.5rem;
   font-weight: 500;
+}
+@media (max-width: 500px) {
+  footer h2 {
+    margin-bottom: 16px;
+  }
 }

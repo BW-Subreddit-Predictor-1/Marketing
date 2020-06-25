@@ -1,5 +1,6 @@
 .body-content {
     .flex-col();
+    
 
     section {
         padding: 64px 0;
@@ -7,6 +8,14 @@
         align-items: center;
         justify-content: center;
         color: @white;
+
+        @media @mobile {
+            max-width: 100%
+            .flex-col();
+            justify-content: center;  
+            padding: 0; 
+        }
+
 
         .card {
             width: 450px;
@@ -17,17 +26,45 @@
             padding-top: 50px;
             padding-right: 60px; 
 
+            @media @mobile {
+                .centerit();
+                text-align: center;
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 50px;
+                border-radius: 0;
+
+            }
+
             h1 {
                 font-size: 1.8rem;
+
+                @media @mobile {
+                    text-align: center;
+                }
             }
 
             h2 {
                 font-size: 1.5rem;
                 font-weight: 500;
+
+                @media @mobile {
+                    text-align: center;
+                }
             }
 
             p {
                 margin: 20px 0;
+
+                @media @mobile {
+                    line-height: 1.2rem;
+
+                    @media @mobile {
+                        text-align: center;
+                    }
+                }
+                
             }
         }
         
@@ -35,12 +72,32 @@
             width: inherit;
             border-radius: 4px;
 
+            @media @mobile {
+                width: 100%;
+                .centerit();
+            }
         }
 
         .item {
             width: 250px;
             margin-left: -50px;
             border-radius: 4px;
+
+        
+            @media @mobile {
+                margin: 0;
+                width: 80%;
+                margin-top: -48px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .buttinstyling {
+
+            @media @mobile {
+                .flex-row();
+            }
+
         }
 
         button {
@@ -55,10 +112,23 @@
             display: inline-block;
             font-size: 16px;
             font-weight: bold;
+
+                @media @mobile {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    margin-top: 16px;
+                }
+                
+        
         }
 
         .signinbtn {
             margin-right: 24px;
+
+            @media @mobile {
+                margin: 0;
+
+            }
         }
 
     }
@@ -68,26 +138,46 @@
         flex-direction: row-reverse;
         background-color: @light-teal;
 
+        @media @mobile {
+         flex-direction: column;   
+        }
+
+        .card {
+            padding-left: 60px;
+            padding-right: 20px;
+            
+            @media @mobile {
+                max-width: 100%;
+                padding-top: 50px;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
         .item {
             margin-right: -50px;
             .flex-col();
             justify-content: flex-end;
 
+            @media @mobile {
+                margin-right: 0px;
+                justify-content: center;
+            }
 
-        }
-        
-        div {
-            padding-right: 20px;
-            padding-left: 60px;
         }
 
         .right-btn {
             margin-left: 280px;
+
+            @media @mobile {
+                margin: 0 auto;
+            }
         }
 
         
         
     }
+
 
     .hero{
         width: 100%;
@@ -95,11 +185,15 @@
         background-color: @light-teal;
         margin-top: 0;
         padding-top: 0;
+        
         img {
             border-radius: 0;
             width: 80%;
+
+            @media @mobile {
+                width: 100%;
+            }
         }
     }
+
 }
-
-
